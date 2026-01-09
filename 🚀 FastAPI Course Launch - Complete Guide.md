@@ -2,7 +2,6 @@
 title: "🚀 FastAPI Course Launch - Complete Guide"
 layout: default
 nav_order: 13
-parent: "Lecture Notes"
 description: "Lecture notes: 🚀 FastAPI Course Launch - Complete Guide"
 last_modified_date: 2026-01-09
 source_transcript: "013_FastAPI_Course_Launch"

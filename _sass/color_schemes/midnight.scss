@@ -1,21 +1,24 @@
 // ═══════════════════════════════════════════════════════════════
-// 🌌 AMOLED MIDNIGHT - True Black Theme with Sky Blue Glow
+// ✨ AMOLED MIDNIGHT PRO - True Black with Glowy Sky Blue
 // ═══════════════════════════════════════════════════════════════
 // Optimized for AMOLED displays - Pure black saves battery!
+// Professional • Modern • Premium Design
 
 // ═══════════════════════════════════════════════════════════════
 // 🎨 COLOR PALETTE - AMOLED True Black + Sky Blue Glow
 // ═══════════════════════════════════════════════════════════════
 
-// Primary Accent - Glowy Sky Blue
+// Primary Accent - Glowy Sky Blue Spectrum
 $sky-blue: #00d4ff;
-$sky-blue-light: #67e8f9;
+$sky-blue-light: #7dd3fc;
+$sky-blue-lighter: #bae6fd;
 $sky-blue-dark: #0891b2;
+$sky-blue-darker: #0e7490;
 
-// AMOLED True Black Backgrounds
+// AMOLED True Black Backgrounds (Battery Optimized)
 $body-background-color: #000000;
 $sidebar-color: #000000;
-$code-background-color: #0a0a0a;
+$code-background-color: #050505;
 $table-background-color: #050505;
 $search-background-color: #000000;
 
@@ -28,11 +31,11 @@ $search-result-preview-color: #a1a1aa;
 // Accent Colors
 $link-color: $sky-blue;
 $btn-primary-color: $sky-blue-dark;
-$base-button-color: #111111;
+$base-button-color: #0a0a0a;
 
-// Border Colors (Subtle, almost invisible)
-$border-color: #1a1a1a;
-$table-border-color: #1a1a1a;
+// Border Colors (Subtle, refined)
+$border-color: rgba(255, 255, 255, 0.06);
+$table-border-color: rgba(255, 255, 255, 0.06);
 
 // Code Colors
 $code-linenumber-color: #52525b;
