@@ -1,436 +1,543 @@
-// ═══════════════════════════════════════════════════════════════
-// 🌙 MIDNIGHT THEME - Custom Styles for Night Learning
-// ═══════════════════════════════════════════════════════════════
+// 
+//  AMOLED MIDNIGHT THEME - True Black + Sky Blue Glow
+// 
+// Professional. Modern. AMOLED-Optimized.
 
-// Smooth scrolling
+// 
+//  CSS VARIABLES - Sky Blue Glow Palette
+// 
+
+:root {
+  // Glowy Sky Blue Accent
+  --sky-blue: #00d4ff;
+  --sky-blue-light: #67e8f9;
+  --sky-blue-dark: #0891b2;
+  --sky-blue-glow: 0 0 20px rgba(0, 212, 255, 0.4);
+  --sky-blue-glow-sm: 0 0 10px rgba(0, 212, 255, 0.3);
+  
+  // AMOLED True Black
+  --bg-pure-black: #000000;
+  --bg-surface-1: #0a0a0a;
+  --bg-surface-2: #111111;
+  --bg-surface-3: #1a1a1a;
+  
+  // Text
+  --text-primary: #ffffff;
+  --text-secondary: #e4e4e7;
+  --text-muted: #71717a;
+  
+  // Borders
+  --border-subtle: #1f1f1f;
+  --border-default: #2a2a2a;
+}
+
+// 
+//  BASE STYLES
+// 
+
 html {
   scroll-behavior: smooth;
 }
 
-// Modern body styling
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-family: ''Inter'', -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;
   line-height: 1.7;
   letter-spacing: 0.01em;
+  background-color: #000000 !important;
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 📱 MOBILE OPTIMIZATIONS
-// ─────────────────────────────────────────────────────────────────
+// 
+//  RESPONSIVE DESIGN
+// 
 
 @media (max-width: 768px) {
   .main-content {
-    padding: 1rem !important;
-    font-size: 1rem;
+    padding: 1.25rem !important;
   }
   
   h1 { font-size: 1.75rem !important; }
-  h2 { font-size: 1.5rem !important; }
-  h3 { font-size: 1.25rem !important; }
-  
-  pre, code {
-    font-size: 0.85rem !important;
-  }
-  
-  table {
-    font-size: 0.85rem;
-  }
+  h2 { font-size: 1.4rem !important; }
+  h3 { font-size: 1.15rem !important; }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// ✨ HEADINGS - Gradient Glow Effect
-// ─────────────────────────────────────────────────────────────────
+// 
+//  HEADINGS - Glowy Sky Blue Accents
+// 
 
 .main-content {
+  background-color: #000000 !important;
+  
   h1 {
     color: #ffffff;
-    font-weight: 700;
-    border-bottom: 2px solid #30363d;
-    padding-bottom: 0.5rem;
-    margin-top: 2rem;
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--sky-blue);
+    text-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
   }
   
   h2 {
-    color: #e6edf3;
-    font-weight: 600;
-    margin-top: 1.75rem;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid #21262d;
+    color: var(--sky-blue-light);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   h3 {
-    color: #c9d1d9;
+    color: #ffffff;
     font-weight: 600;
-    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 🔗 LINKS - Soft Glow Hover
-// ─────────────────────────────────────────────────────────────────
+// 
+//  LINKS - Sky Blue Glow Effect
+// 
 
 a {
-  color: #79c0ff;
+  color: var(--sky-blue);
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
   
   &:hover {
-    color: #a5d6ff;
-    text-decoration: underline;
+    color: var(--sky-blue-light);
+    text-shadow: var(--sky-blue-glow-sm);
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 💻 CODE BLOCKS - Modern Dark
-// ─────────────────────────────────────────────────────────────────
+// 
+//  COURSE CONTENT CARDS - Glass Morphism
+// 
 
-code {
-  background-color: #21262d;
-  color: #f0883e;
-  padding: 0.2em 0.4em;
-  border-radius: 6px;
-  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
-  font-size: 0.9em;
-}
-
-pre {
-  background-color: #161b22 !important;
-  border: 1px solid #30363d;
-  border-radius: 8px;
-  padding: 1rem;
-  overflow-x: auto;
+.main-content h3 {
+  margin: 0;
+  padding: 0;
+  border: none;
   
-  code {
-    background-color: transparent;
-    color: #e6edf3;
-    padding: 0;
+  a {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 0.75rem 0;
+    background: linear-gradient(135deg, 
+      rgba(0, 212, 255, 0.05) 0%, 
+      rgba(0, 0, 0, 0.8) 100%);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 16px;
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    
+    // Subtle glow line on left
+    &::before {
+      content: '''';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, var(--sky-blue) 0%, var(--sky-blue-dark) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    &:hover {
+      background: linear-gradient(135deg, 
+        rgba(0, 212, 255, 0.12) 0%, 
+        rgba(0, 212, 255, 0.03) 100%);
+      border-color: var(--sky-blue);
+      transform: translateX(8px);
+      box-shadow: 
+        0 8px 32px rgba(0, 212, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      
+      &::before {
+        opacity: 1;
+      }
+    }
+    
+    &:active {
+      transform: translateX(8px) scale(0.99);
+    }
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 📊 TABLES - Clean Dark Style
-// ─────────────────────────────────────────────────────────────────
+// 
+//  BLOCKQUOTES - Accent Style
+// 
+
+blockquote {
+  background: linear-gradient(135deg, 
+    rgba(0, 212, 255, 0.08) 0%, 
+    rgba(0, 0, 0, 0.6) 100%);
+  border-left: 4px solid var(--sky-blue);
+  border-radius: 0 12px 12px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: normal;
+  
+  p {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+  
+  strong {
+    color: var(--sky-blue-light);
+  }
+}
+
+// 
+//  NOTE CALLOUT - Special Highlight
+// 
+
+.note, .main-content > p:has(strong:first-child) {
+  background: linear-gradient(135deg, 
+    rgba(0, 212, 255, 0.1) 0%, 
+    rgba(8, 145, 178, 0.05) 100%);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-left: 4px solid var(--sky-blue);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  
+  strong {
+    color: var(--sky-blue-light);
+  }
+}
+
+// 
+//  TABLES - Modern Glass Style
+// 
 
 table {
   width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 2rem 0;
+  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface-1);
   
   th {
-    background-color: #21262d;
-    color: #ffffff;
+    background: linear-gradient(135deg, 
+      rgba(0, 212, 255, 0.15) 0%, 
+      rgba(0, 0, 0, 0.8) 100%);
+    color: var(--sky-blue-light);
     font-weight: 600;
-    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 1rem 1.25rem;
     text-align: left;
-    border-bottom: 2px solid #30363d;
+    border-bottom: 1px solid var(--border-subtle);
   }
   
   td {
-    padding: 0.75rem 1rem;
-    border-bottom: 1px solid #21262d;
-    color: #c9d1d9;
-  }
-  
-  tr:hover {
-    background-color: #161b22;
+    padding: 0.875rem 1.25rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background 0.2s ease;
   }
   
   tr:last-child td {
     border-bottom: none;
   }
-}
-
-// ─────────────────────────────────────────────────────────────────
-// 📝 BLOCKQUOTES - Accent Bar
-// ─────────────────────────────────────────────────────────────────
-
-blockquote {
-  background-color: #161b22;
-  border-left: 4px solid #58a6ff;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
-  border-radius: 0 8px 8px 0;
-  color: #c9d1d9;
   
-  p {
-    margin: 0;
+  tr:hover td {
+    background: rgba(0, 212, 255, 0.05);
+  }
+  
+  // Bold values in table
+  td strong {
+    color: #ffffff;
+    font-weight: 600;
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 📋 LISTS - Better Spacing
-// ─────────────────────────────────────────────────────────────────
+// 
+//  CODE BLOCKS - Sleek Dark
+// 
+
+code {
+  background-color: var(--bg-surface-2);
+  color: var(--sky-blue);
+  padding: 0.25em 0.5em;
+  border-radius: 6px;
+  font-family: ''JetBrains Mono'', ''Fira Code'', ''SF Mono'', monospace;
+  font-size: 0.875em;
+  border: 1px solid var(--border-subtle);
+}
+
+pre {
+  background-color: var(--bg-surface-1) !important;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  
+  code {
+    background: transparent;
+    color: var(--text-secondary);
+    padding: 0;
+    border: none;
+  }
+}
+
+// 
+//  LISTS - Clean Styling
+// 
 
 ul, ol {
   padding-left: 1.5rem;
   
   li {
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
+    margin-bottom: 0.625rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    
+    strong {
+      color: #ffffff;
+    }
   }
 }
 
-// Nested lists
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-// ─────────────────────────────────────────────────────────────────
-// 🔍 SEARCH - Modern Input
-// ─────────────────────────────────────────────────────────────────
-
-.search-input {
-  background-color: #0d1117 !important;
-  border: 1px solid #30363d !important;
-  border-radius: 8px !important;
-  color: #e6edf3 !important;
-  
-  &:focus {
-    border-color: #58a6ff !important;
-    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15) !important;
+// Feature list with checkmarks
+.main-content ul li {
+  &::marker {
+    color: var(--sky-blue);
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 📚 SIDEBAR - Clean Navigation (Fixed Hover States)
-// ─────────────────────────────────────────────────────────────────
+// 
+//  SIDEBAR - Pure Black
+// 
 
 .side-bar {
-  background-color: #010409 !important;
-  border-right: 1px solid #21262d;
+  background-color: #000000 !important;
+  border-right: 1px solid var(--border-subtle);
 }
 
 .site-title {
   color: #ffffff !important;
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
 }
 
-// Fix navigation link colors for all states
+.site-header {
+  background-color: #000000 !important;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+// Navigation links
 .nav-list {
   .nav-list-item {
     .nav-list-link {
-      color: #8b949e !important;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      margin: 2px 0;
-      transition: all 0.15s ease;
-      background-color: transparent !important;
+      color: var(--text-muted) !important;
+      padding: 0.625rem 1rem;
+      border-radius: 8px;
+      margin: 2px 8px;
+      transition: all 0.2s ease;
+      font-size: 0.9rem;
       
       &:hover {
-        background-color: #21262d !important;
-        color: #ffffff !important;
-      }
-      
-      &:focus {
-        background-color: #21262d !important;
-        color: #ffffff !important;
+        background: rgba(0, 212, 255, 0.1) !important;
+        color: var(--sky-blue-light) !important;
       }
       
       &.active {
-        background-color: #238636 !important;
-        color: #ffffff !important;
+        background: linear-gradient(135deg, 
+          rgba(0, 212, 255, 0.2) 0%, 
+          rgba(0, 212, 255, 0.05) 100%) !important;
+        color: var(--sky-blue) !important;
         font-weight: 600;
-      }
-    }
-    
-    // Child nav items
-    .nav-list {
-      .nav-list-item {
-        .nav-list-link {
-          color: #8b949e !important;
-          padding-left: 1.5rem;
-          
-          &:hover {
-            background-color: #21262d !important;
-            color: #ffffff !important;
-          }
-          
-          &.active {
-            background-color: #1f6feb !important;
-            color: #ffffff !important;
-          }
-        }
+        border-left: 3px solid var(--sky-blue);
       }
     }
   }
 }
 
-// Override any theme default hover/focus states
-.nav-list-link:hover,
-.nav-list-link:focus,
-.nav-list-link.active {
-  color: #ffffff !important;
+// 
+//  SEARCH - Modern Input
+// 
+
+.search-input {
+  background-color: var(--bg-surface-1) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 10px !important;
+  color: var(--text-secondary) !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.2s ease !important;
+  
+  &::placeholder {
+    color: var(--text-muted) !important;
+  }
+  
+  &:focus {
+    border-color: var(--sky-blue) !important;
+    box-shadow: var(--sky-blue-glow-sm) !important;
+    outline: none !important;
+  }
 }
 
-// Site nav specific overrides
-.site-nav {
-  background-color: #010409 !important;
+.search-results {
+  background-color: var(--bg-surface-1) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 12px !important;
   
-  .nav-list-link {
-    color: #8b949e !important;
+  .search-result {
+    border-bottom: 1px solid var(--border-subtle);
     
     &:hover {
-      color: #ffffff !important;
-      background-color: #21262d !important;
+      background: rgba(0, 212, 255, 0.05);
     }
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// ⬆️ BACK TO TOP - Floating Button
-// ─────────────────────────────────────────────────────────────────
-
-.back-to-top {
-  background-color: #21262d !important;
-  border: 1px solid #30363d !important;
-  border-radius: 50% !important;
-  color: #8b949e !important;
-  
-  &:hover {
-    background-color: #30363d !important;
-    color: #ffffff !important;
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────
-// 🦶 FOOTER - Subtle
-// ─────────────────────────────────────────────────────────────────
+// 
+//  FOOTER - Subtle Elegance
+// 
 
 .site-footer {
-  border-top: 1px solid #21262d;
-  color: #8b949e;
+  border-top: 1px solid var(--border-subtle);
+  color: var(--text-muted);
   font-size: 0.85rem;
-  padding-top: 1rem;
+  padding: 1.5rem 0;
   
   a {
-    color: #58a6ff;
+    color: var(--sky-blue);
+    
+    &:hover {
+      text-shadow: var(--sky-blue-glow-sm);
+    }
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 🎯 SPECIAL ELEMENTS
-// ─────────────────────────────────────────────────────────────────
+// 
+//  BACK TO TOP
+// 
 
-// Horizontal rules
-hr {
-  border: none;
-  border-top: 1px solid #21262d;
-  margin: 2rem 0;
+.back-to-top {
+  background: var(--bg-surface-2) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 50% !important;
+  color: var(--sky-blue) !important;
+  transition: all 0.2s ease !important;
+  
+  &:hover {
+    background: var(--bg-surface-3) !important;
+    border-color: var(--sky-blue) !important;
+    box-shadow: var(--sky-blue-glow-sm) !important;
+  }
 }
 
-// Selection color
+// 
+//  MISC ELEMENTS
+// 
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--border-subtle) 20%, 
+    var(--sky-blue) 50%, 
+    var(--border-subtle) 80%, 
+    transparent 100%);
+  margin: 2.5rem 0;
+  opacity: 0.5;
+}
+
 ::selection {
-  background-color: #264f78;
+  background-color: rgba(0, 212, 255, 0.3);
   color: #ffffff;
 }
 
-// Scrollbar styling (for webkit browsers)
+// Scrollbar
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0d1117;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #30363d;
+  background: var(--bg-surface-3);
   border-radius: 4px;
   
   &:hover {
-    background: #484f58;
+    background: var(--sky-blue-dark);
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 🏷️ EMOJI SUPPORT
-// ─────────────────────────────────────────────────────────────────
+// 
+//  AUX LINKS (Top Right)
+// 
 
-// Ensure emojis display nicely
-.emoji {
-  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-}
-
-// ─────────────────────────────────────────────────────────────────
-// 📚 INDEX PAGE - Course Content Cards
-// ─────────────────────────────────────────────────────────────────
-
-.main-content {
-  // Style H3 links as cards on home page
-  h3 {
+.aux-nav {
+  .aux-nav-list-item {
     a {
-      display: block;
-      padding: 1rem 1.25rem;
-      margin: 0.5rem 0;
-      background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #58a6ff;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: all 0.3s ease;
+      color: var(--text-muted) !important;
+      font-size: 0.85rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
       
       &:hover {
-        background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-        border-color: #58a6ff;
-        transform: translateX(8px);
-        box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+        color: var(--sky-blue) !important;
+        border-color: var(--sky-blue);
+        background: rgba(0, 212, 255, 0.1);
       }
     }
   }
-  
-  // Note callout styling
-  .note {
-    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
-    border-left: 4px solid #58a6ff;
-    padding: 1rem 1.25rem;
-    border-radius: 0 8px 8px 0;
-    margin: 1.5rem 0;
-    
-    p {
-      margin: 0;
-      color: #e2e8f0;
-    }
+}
+
+// 
+//  MOBILE MENU
+// 
+
+@media (max-width: 800px) {
+  .site-header {
+    background-color: #000000 !important;
   }
   
-  // Stats table styling
-  table {
-    margin: 1.5rem 0;
-    
-    th {
-      background: #21262d;
-      color: #58a6ff;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-    }
-    
-    td {
-      background: #161b22;
-    }
-    
-    tr:hover td {
-      background: #1f2937;
-    }
+  .site-nav, .site-header, .main-content-wrap {
+    background-color: #000000 !important;
   }
 }
 
-// ─────────────────────────────────────────────────────────────────
-// 🎯 FEATURE LIST STYLING
-// ─────────────────────────────────────────────────────────────────
+// 
+//  ANIMATIONS
+// 
 
-.main-content ul li {
-  position: relative;
-  padding-left: 0.25rem;
-  
-  // Checkmark items
-  &:has(text:contains("✅")) {
-    list-style: none;
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
   }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+  }
+}
+
+// Apply subtle glow animation to headings on hover
+.main-content h1:hover {
+  animation: glow-pulse 2s ease-in-out infinite;
 }

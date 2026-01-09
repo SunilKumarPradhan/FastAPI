@@ -16,31 +16,31 @@ last_modified_date: 2026-01-09
 
 ## 📚 Course Content
 
-### 1. [🎓 What is an API? | Introduction to APIs | FastAPI for Machine Learning](%F0%9F%8E%93%20What%20is%20an%20API%20%20Introduction%20to%20APIs%20%20FastAPI%20for%20Machine%20Learning.html)
+### [🎓 What is an API? | Introduction to APIs | FastAPI for Machine Learning](%F0%9F%8E%93%20What%20is%20an%20API%20%20Introduction%20to%20APIs%20%20FastAPI%20for%20Machine%20Learning.html)
 
-### 2. [🚀 FastAPI Philosophy | How to setup FastAPI | Installation and Code Demo](%F0%9F%9A%80%20FastAPI%20Philosophy%20%20How%20to%20setup%20FastAPI%20%20Installation%20and%20Code%20Demo.html)
+### [🚀 FastAPI Philosophy | How to setup FastAPI | Installation and Code Demo](%F0%9F%9A%80%20FastAPI%20Philosophy%20%20How%20to%20setup%20FastAPI%20%20Installation%20and%20Code%20Demo.html)
 
-### 3. [🚀 HTTP Methods in FastAPI - Patient Management System](%F0%9F%9A%80%20HTTP%20Methods%20in%20FastAPI%20-%20Patient%20Management%20System.html)
+### [🚀 HTTP Methods in FastAPI - Patient Management System](%F0%9F%9A%80%20HTTP%20Methods%20in%20FastAPI%20-%20Patient%20Management%20System.html)
 
-### 4. [📑 Path & Query Parameters in FastAPI](%F0%9F%93%91%20Table%20of%20Contents.html)
+### [📑 Path & Query Parameters in FastAPI](%F0%9F%93%91%20Table%20of%20Contents.html)
 
-### 5. [Pydantic Complete Guide: Data Validation and Modeling in Python](Pydantic%20Complete%20Guide%20Data%20Validation%20and%20Modeling%20in%20Python.html)
+### [🔧 Pydantic Complete Guide: Data Validation and Modeling in Python](Pydantic%20Complete%20Guide%20Data%20Validation%20and%20Modeling%20in%20Python.html)
 
-### 6. [🚀 POST Requests in FastAPI | Understanding Request Body](%F0%9F%9A%80%20POST%20Requests%20in%20FastAPI%20%20Understanding%20Request%20Body.html)
+### [🚀 POST Requests in FastAPI | Understanding Request Body](%F0%9F%9A%80%20POST%20Requests%20in%20FastAPI%20%20Understanding%20Request%20Body.html)
 
-### 7. [🚀 PUT & DELETE in FastAPI | Complete CRUD Operations](%F0%9F%9A%80%20PUT%20%26%20DELETE%20in%20FastAPI%20%20Complete%20CRUD%20Operations.html)
+### [🚀 PUT & DELETE in FastAPI | Complete CRUD Operations](%F0%9F%9A%80%20PUT%20%26%20DELETE%20in%20FastAPI%20%20Complete%20CRUD%20Operations.html)
 
-### 8. [🚀 Serving ML Models with FastAPI | Complete Guide](%F0%9F%9A%80%20Serving%20ML%20Models%20with%20FastAPI%20%20Complete%20Guide.html)
+### [🤖 Serving ML Models with FastAPI | Complete Guide](%F0%9F%9A%80%20Serving%20ML%20Models%20with%20FastAPI%20%20Complete%20Guide.html)
 
-### 9. [📑 Improving the FastAPI API - Complete Study Notes](%F0%9F%93%91%20Improving%20the%20FastAPI%20API%20-%20Complete%20Study%20Notes.html)
+### [📑 Improving the FastAPI API - Complete Study Notes](%F0%9F%93%91%20Improving%20the%20FastAPI%20API%20-%20Complete%20Study%20Notes.html)
 
-### 10. [🐳 Docker for Machine Learning - Complete Guide](Docker%20for%20Machine%20Learning%20Complete%20Guide.html)
+### [🐳 Docker for Machine Learning - Complete Guide](Docker%20for%20Machine%20Learning%20Complete%20Guide.html)
 
-### 11. [🐳 FastAPI + Docker Tutorial for Beginners | Complete Dockerization Guide](%F0%9F%90%B3%20FastAPI%20%2B%20Docker%20Tutorial%20for%20Beginners%20%20Complete%20Dockerization%20Guide.html)
+### [🐳 FastAPI + Docker Tutorial | Complete Dockerization Guide](%F0%9F%90%B3%20FastAPI%20%2B%20Docker%20Tutorial%20for%20Beginners%20%20Complete%20Dockerization%20Guide.html)
 
-### 12. [🚀 How to Deploy a FastAPI API on AWS - Complete Deployment Guide](%F0%9F%9A%80%20How%20to%20Deploy%20a%20FastAPI%20API%20on%20AWS%20-%20Complete%20Deployment%20Guide.html)
+### [☁️ How to Deploy a FastAPI API on AWS - Complete Deployment Guide](%F0%9F%9A%80%20How%20to%20Deploy%20a%20FastAPI%20API%20on%20AWS%20-%20Complete%20Deployment%20Guide.html)
 
-### 13. [🚀 FastAPI Course Launch - Complete Guide](%F0%9F%9A%80%20FastAPI%20Course%20Launch%20-%20Complete%20Guide.html)
+### [🚀 FastAPI Course Launch - Complete Guide](%F0%9F%9A%80%20FastAPI%20Course%20Launch%20-%20Complete%20Guide.html)
 
 ---
 
@@ -54,15 +54,13 @@ last_modified_date: 2026-01-09
 
 ---
 
-## 🚀 About This Site
+## ✨ Features
 
-These notes were **automatically generated** from video lecture transcripts using AI-powered analysis.
-
-**Features:**
-- ✅ Comprehensive coverage of all topics
-- ✅ Code examples and practical demonstrations
+- ✅ Comprehensive coverage of all FastAPI topics
+- ✅ Code examples and practical demonstrations  
 - ✅ Key takeaways and summaries
 - ✅ Easy-to-navigate structure
+- ✅ AMOLED-optimized dark theme
 
 ---
 
